@@ -32,3 +32,14 @@ def encoder(password_to_encode):
 
 if __name__ == "__main__":
     main()
+
+def decoder(password_to_decode):
+    original_password = password_to_decode
+    password_to_decode = list(str(password_to_decode))
+    decoded_password = ""
+
+    for i in range(len(password_to_decode)):
+        decoded_password += (str(int(password_to_decode[i]) - 3))
+
+    return decoded_password
+
