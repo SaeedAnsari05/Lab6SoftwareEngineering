@@ -28,6 +28,7 @@ def encoder(password_to_encode):
     for i in range(len(password_to_encode)):
         encoded_password += (str(int(password_to_encode[i]) + 3))
 
+    new_encoded_password = encoded_password
     return encoded_password
 
 if __name__ == "__main__":
